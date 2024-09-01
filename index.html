@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taiff - Controle de Qualidade</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Taiff - Controle de Qualidade</h1>
+        <p>Use a câmera para capturar uma imagem e avalie se a peça está em boas condições. Clique em "Bom" se a peça estiver aprovada ou "Com Defeito" se estiver reprovada.</p>
+        <video id="video" autoplay></video>
+        <canvas id="canvas" style="display:none;"></canvas>
+        <div class="button-container">
+            <button id="capture">Capturar Imagem</button>
+            <button id="good" class="good-button" style="display:none;">Bom</button>
+            <button id="bad" class="bad-button" style="display:none;">Com Defeito</button>
+        </div>
+        <div id="result">
+            <span id="status"></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
